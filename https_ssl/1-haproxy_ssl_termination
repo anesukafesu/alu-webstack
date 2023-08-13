@@ -42,7 +42,7 @@ defaults
         stats auth ssam:random
 
 frontend ourfrontend
-        bind *:443 ssl crt /etc/ssl/private/ssunday.tech.pem
+        bind *:443 ssl crt /etc/ssl/private/getrelay.tech.pem
         http-request add-header X-Forwarded-Proto https
         default_backend ourendpoint
 
